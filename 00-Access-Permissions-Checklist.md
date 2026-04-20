@@ -3,7 +3,7 @@
 ## Why This Module Exists
 This is the **#1 blocker** in every Foundry workshop. If access and permissions are not sorted before you start building, you will hit errors in every subsequent module. Complete every item in this checklist before moving to Module 01.
 
-> **Instructor Note:** Send this checklist to attendees **48 hours before the workshop**. At least half the items require admin action or propagation time.
+> **Note:** Complete this checklist **at least 48 hours before starting the workshop**. Several items require admin action or propagation time.
 
 ---
 

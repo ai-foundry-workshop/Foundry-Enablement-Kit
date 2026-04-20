@@ -18,7 +18,7 @@ No Microsoft internal data or customer-specific data is included in this reposit
 ## Build Your First Enterprise AI Agent with Microsoft Foundry
 
 ### Purpose
-A hands-on, instructor-led workshop that takes customers from **zero Foundry experience** to a **working AI agent grounded in enterprise data** — using multiple knowledge source types, Foundry IQ, and Work IQ.
+A hands-on workshop that takes you from **zero Foundry experience** to a **working AI agent grounded in enterprise data** — using multiple knowledge source types, Foundry IQ, and Work IQ.
 
 ### Audience
 Cloud engineers, solution architects, and technical decision-makers who want to evaluate or adopt Azure AI Foundry for enterprise AI use cases. No prior Foundry experience required.

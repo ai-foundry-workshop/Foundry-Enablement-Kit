@@ -1,7 +1,7 @@
 # Module 07 — Troubleshooting Playbook
 
 ## Purpose
-Use this playbook during live labs to quickly diagnose and unblock learners. Every issue was encountered in real workshops with exact error messages, root causes, and portal navigation to fix.
+Use this playbook to quickly diagnose and resolve common issues. Every issue listed here was encountered in real workshops with exact error messages, root causes, and portal navigation to fix.
 
 ## Fast Triage Flow
 1. Ask: "What exactly do you see on screen?" (get the exact error message)
@@ -29,11 +29,11 @@ Account does not have **Contributor** or **Owner** role on the subscription.
 1. Azure Portal → **Subscriptions** → click subscription → **Access control (IAM)**
 2. **+ Add** → **Add role assignment**
 3. Role: `Contributor` → **Next**
-4. **+ Select members** → find learner's email → **Select** → **Review + assign**
+4. **+ Select members** → find the user's email → **Select** → **Review + assign**
 5. Wait 30 seconds for propagation
 
 ### Verification
-Learner refreshes ai.azure.com → **+ Create project** works without error.
+Refresh ai.azure.com → **+ Create project** works without error.
 
 ---
 
