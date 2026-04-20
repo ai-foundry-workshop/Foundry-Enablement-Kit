@@ -1,0 +1,26 @@
+# Internal / customer-specific files
+miscellanious/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+
+# Secrets / environment
+.env
+.env.*
+
+# Rendered outputs (regenerate from .mmd source)
+*.svg
+
+# Python (if notebooks are added)
+__pycache__/
+*.pyc
+
+# Node (if tooling is added)
+node_modules/

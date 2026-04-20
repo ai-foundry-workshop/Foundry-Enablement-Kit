@@ -1,0 +1,95 @@
+flowchart TD
+    classDef access fill:#FFEBEE,stroke:#C62828,color:#B71C1C
+    classDef setup fill:#E3F2FD,stroke:#1565C0,color:#0D47A1
+    classDef knowledge fill:#FFF3E0,stroke:#E65100,color:#BF360C
+    classDef agent fill:#E8F5E9,stroke:#2E7D32,color:#1B5E20
+    classDef iq fill:#F3E5F5,stroke:#6A1B9A,color:#4A148C
+    classDef workiq fill:#E0F7FA,stroke:#00838F,color:#006064
+    classDef checkpoint fill:#FFF9C4,stroke:#F57F17,color:#E65100
+
+    START([Workshop Start]) --> M0
+
+    subgraph M0["Module 00 — Access & Permissions (45 min)"]
+        M0A[Verify Azure subscription + role]
+        M0B[Verify ai.azure.com access]
+        M0C[Check region + model quota]
+        M0D[Understand 2 RBAC flows]
+        M0E["(Optional) Entra roles for SharePoint"]
+        M0F["(Optional) M365 + Copilot license for Work IQ"]
+        M0A --> M0B --> M0C --> M0D --> M0E --> M0F
+    end
+    class M0 access
+
+    M0 --> CP0{{Checkpoint: All access items verified}}
+    class CP0 checkpoint
+    CP0 --> M1
+
+    subgraph M1["Module 01 — Foundry Project & Models (45 min)"]
+        M1A["Create project at ai.azure.com"]
+        M1B["Deploy gpt-4o (chat)"]
+        M1C["Deploy text-embedding-3-large"]
+        M1D["Create AI Search (Standard S1)"]
+        M1E["Enable MI + RBAC on Search"]
+        M1F["RBAC Flow 1: Search → OpenAI"]
+        M1A --> M1B --> M1C --> M1D --> M1E --> M1F
+    end
+    class M1 setup
+
+    M1 --> CP1{{Checkpoint: Models + Search + RBAC Flow 1 done}}
+    class CP1 checkpoint
+    CP1 --> M2
+
+    subgraph M2["Module 02 — Knowledge Sources (60 min)"]
+        M2A["Source 1: Azure AI Search Index"]
+        M2B["Source 2: Azure Blob Storage"]
+        M2C["Source 3: Web / Bing Grounding"]
+        M2D["Source 4: SharePoint Remote"]
+        M2E["Source 5: SharePoint Indexed"]
+        M2A --> M2B --> M2C --> M2D --> M2E
+    end
+    class M2 knowledge
+
+    M2 --> CP2{{Checkpoint: 2+ knowledge sources Active}}
+    class CP2 checkpoint
+    CP2 --> M3
+
+    subgraph M3["Module 03 — Build Agent (45 min)"]
+        M3A["RBAC Flow 2: Foundry → Search (3 roles)"]
+        M3B[Create agent + instructions]
+        M3C[Attach knowledge source]
+        M3D["Test: grounded, citation, refusal"]
+        M3E[Add multiple sources to agent]
+        M3A --> M3B --> M3C --> M3D --> M3E
+    end
+    class M3 agent
+
+    M3 --> CP3{{Checkpoint: Agent passes 4 tests}}
+    class CP3 checkpoint
+    CP3 --> M4
+
+    subgraph M4["Module 04 — Foundry IQ (45 min)"]
+        M4A[Create multi-source Knowledge Base]
+        M4B[Configure reasoning effort + output mode]
+        M4C[Test KB directly]
+        M4D[Connect KB to agent]
+        M4E[Compare reasoning levels]
+        M4A --> M4B --> M4C --> M4D --> M4E
+    end
+    class M4 iq
+
+    M4 --> CP4{{Checkpoint: KB Active + agent grounded via KB}}
+    class CP4 checkpoint
+    CP4 --> M5
+
+    subgraph M5["Module 05 — Work IQ (45 min)"]
+        M5A[Enable Work IQ on agent]
+        M5B[Configure Graph permissions]
+        M5C["Test: People, Email, Calendar"]
+        M5D["Test: Foundry IQ + Work IQ combined"]
+        M5A --> M5B --> M5C --> M5D
+    end
+    class M5 workiq
+
+    M5 --> CP5{{Checkpoint: Combined query works}}
+    class CP5 checkpoint
+    CP5 --> DONE([Workshop Complete])
