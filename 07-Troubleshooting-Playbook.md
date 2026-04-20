@@ -177,8 +177,8 @@ Copied the **Secret ID** column instead of the **Value** column.
 3. **IMMEDIATELY copy the Value column** (not Secret ID)
 4. Update the configuration and retry
 
-### Instructor Tip
-Before learners create secrets, say: "You will see two columns. Copy VALUE, not Secret ID. Value disappears once you leave this page."
+### Important
+> ⚠️ You will see two columns. Copy **VALUE**, not Secret ID. The Value disappears once you leave this page.
 
 ---
 
@@ -341,4 +341,4 @@ Agents attach to KBs, not Sources.
 | Azure subscription/access | Your Azure admin |
 | Entra roles / admin consent | Your Entra admin |
 | M365 / Copilot licensing | Your M365 admin |
-| Workshop content issues | Workshop instructor |
+| Workshop content issues | Repository maintainer |

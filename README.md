@@ -78,9 +78,9 @@ Cloud engineers, solution architects, and technical decision-makers who want to 
 ```
 
 ### Delivery Rhythm (Per Module)
-1. **Explain** — 5 min instructor talking points
-2. **Demo** — 5–10 min live walkthrough
-3. **Build** — 15–25 min learners follow the guide
+1. **Explain** — 5 min overview of concepts
+2. **Demo** — 5–10 min walkthrough
+3. **Build** — 15–25 min hands-on following the guide
 4. **Checkpoint** — 5 min verification questions
 
 ### How to Start

@@ -228,7 +228,7 @@ Work IQ uses Microsoft Graph to access M365 data. Verify:
 
 ## Part 7: Pre-Workshop Summary Checklist
 
-Complete this before Module 01. Hand this to the instructor on workshop day.
+Complete this before Module 01. Confirm all items are checked before proceeding.
 
 | # | Item | Status |
 |---|---|---|
@@ -246,4 +246,4 @@ Complete this before Module 01. Hand this to the instructor on workshop day.
 | Chosen region | ________________ |
 | Your email/UPN | ________________ |
 
-> **Instructor:** Do not let anyone start Module 01 until items 1–4 are checked. Items 5–6 are only needed for later modules.
+> **Important:** Do not start Module 01 until items 1–4 are checked. Items 5–6 are only needed for later modules.

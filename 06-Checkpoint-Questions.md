@@ -1,9 +1,9 @@
 # Module 06 — Checkpoint Questions and Answer Key
 
 ## How to Use
-1. Ask these questions at the **end of each module** before learners proceed.
-2. Require a **live screen share** showing the completed work before moving forward.
-3. If a learner cannot answer 2 or more questions in a module, pair them with a partner or revisit the steps.
+1. Answer these questions at the **end of each module** before proceeding.
+2. Verify by checking your own screen against the expected outcomes.
+3. If you cannot answer 2 or more questions in a module, revisit the steps before moving on.
 
 ---
 
